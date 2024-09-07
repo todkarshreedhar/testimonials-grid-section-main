@@ -25,9 +25,9 @@
         background-color: rgb(218, 218, 249);
       }
       .container {
-        margin-left: 20%;
+        margin-left: 10%;
         margin-top: 50px;
-        width: 60%;
+        width: 80%;
         display: grid;
         grid-template-rows: 370px 370px;
         grid-template-columns: 1.5fr 1fr 1fr 1fr;
@@ -110,6 +110,53 @@
         font-size: small;
         padding: 0px;
         margin: 0px;
+      }
+      @media screen and (max-width: 1460px) {
+        .container {
+          margin-left: 5%;
+          margin-top: 50px;
+          width: 90%;
+          display: grid;
+          grid-template-rows: 500px 500px;
+          grid-template-columns: 1.5fr 1fr 1fr 1fr;
+          gap: 25px;
+          font-family: "Barlow Semi Condensed", sans-serif;
+          font-weight: 400;
+          font-style: small;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        .container {
+          margin-left: 15%;
+          margin-top: 50px;
+          width: 70%;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+          gap: 25px;
+          font-family: "Barlow Semi Condensed", sans-serif;
+          font-weight: 400;
+          font-style: small;
+        }
+        .block-1 {
+          grid-column: span 1;
+          background-color: hsl(263, 55%, 52%);
+          color: white;
+        }
+        .block-4 {
+          grid-column: span 1;
+          grid-row: span 1;
+          order: 5;
+          background-color: hsl(219, 29%, 14%);
+          color: white;
+        }
+        .block-5 {
+          grid-column: span 1;
+          grid-row: span 1;
+          order: 3;
+          background-color: rgb(243, 243, 244);
+          color: black;
+        }
       }
     </style>
   </head>
